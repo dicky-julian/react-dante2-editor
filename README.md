@@ -1,4 +1,23 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Getting Start
+
+Dante 2 is a complete rewrite of DanteEditor. This version is built on top of Facebook's Draft-Js and reaches all Dante's features with a shiny ultra mega super uber maintainable architecture.
+
+To getting start, install dependencies `npm i Dante2`. visit [https://www.npmjs.com/package/Dante2](https://www.npmjs.com/package/Dante2) for more details.
+
+Add Dante to your component :
+<pre>
+   Component Based
+    ```javascript
+    <DanteEditor
+        config={this.config}
+        content={this.demo}
+    />
+</pre>
+
+`Options:`
+Many configuration options and plugin usage can be found on the documentation page:
+
+See https://michelson.github.io/dante2/doc.html
 
 ## Available Scripts
 

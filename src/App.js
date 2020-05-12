@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Dante from "Dante2";
 
-function App() {
+console.log("wtf");
+
+var content = null;
+var test = window.localStorage.getItem(content);
+content = test;
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Dante
+        content={test}
+        body_placeholder={"hello"}
+        data_storage={{
+          interval: 1000,
+          save_handler: (context, content) => {
+            console.log(context);
+            window.localStorage.setItem("context", context);
+          }
+        }}
+        read_only={false}
+        style={{margin: '3em'}}
+      />
   );
 }
-
-export default App;
