@@ -8,7 +8,7 @@ Add Dante to your component :
 <pre>
    Component Based
     ```javascript
-    <DanteEditor
+    < DanteEditor
         config={this.config}
         content={this.demo}
     />
